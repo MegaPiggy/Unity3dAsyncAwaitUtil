@@ -8,6 +8,11 @@ public static class Awaiters
     readonly static WaitForFixedUpdate _waitForFixedUpdate = new WaitForFixedUpdate();
     readonly static WaitForEndOfFrame _waitForEndOfFrame = new WaitForEndOfFrame();
 
+    public static WaitForUpdate MainThread
+    {
+        get { return _waitForUpdate; }
+    }
+
     public static WaitForUpdate NextFrame
     {
         get { return _waitForUpdate; }
